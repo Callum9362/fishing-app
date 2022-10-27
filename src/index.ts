@@ -4,6 +4,11 @@ import rodsRouter from './routers/RodsRouter';
 // Creates a new Express app instance
 const app = express();
 
+// Frontpage
+app.get('/', (req, res) => {
+    res.send('Need to do something here.');
+});
+
 // Handles /movies routes
 app.use('/rods', rodsRouter); 
 

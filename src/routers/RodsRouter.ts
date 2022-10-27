@@ -7,6 +7,6 @@ const rodsRouter = Router();
 rodsRouter.get('/', rodsController.index);
 
 // GET /rods/welcome
-rodsRouter.get('/welcome', rodsController.getWelcome);
+rodsRouter.get('/price', rodsController.getRodPrice);
 
 export default rodsRouter;

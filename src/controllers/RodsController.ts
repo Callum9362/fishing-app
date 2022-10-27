@@ -5,6 +5,8 @@ export function index(req: Request, res: Response) {
     res.send('This is my default response..');
 }
 
-export function getWelcome(req: Request, res: Response) {
-    res.send('This is my welcome response...');
+export function getRodPrice(req: Request, res: Response) {
+    const { name, price }= req.query;
+
+    res.send(`The rod is ${name}, price is: ${price}`);
 }

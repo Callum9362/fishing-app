@@ -7,6 +7,10 @@ const express_1 = __importDefault(require("express"));
 const RodsRouter_1 = __importDefault(require("./routers/RodsRouter"));
 // Creates a new Express app instance
 const app = (0, express_1.default)();
+// Frontpage
+app.get('/', (req, res) => {
+    res.send('Need to do something here.');
+});
 // Handles /movies routes
 app.use('/rods', RodsRouter_1.default);
 // Starts the app on port 5000, then calls the callback when 

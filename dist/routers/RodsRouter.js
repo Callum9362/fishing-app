@@ -29,6 +29,6 @@ const rodsRouter = (0, express_1.Router)();
 // GET /rods/
 rodsRouter.get('/', rodsController.index);
 // GET /rods/welcome
-rodsRouter.get('/welcome', rodsController.getWelcome);
+rodsRouter.get('/price', rodsController.getRodPrice);
 exports.default = rodsRouter;
 //# sourceMappingURL=RodsRouter.js.map
