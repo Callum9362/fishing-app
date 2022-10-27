@@ -6,7 +6,9 @@ export function index(req: Request, res: Response) {
 }
 
 export function getRodPrice(req: Request, res: Response) {
-    const { name, price }= req.query;
 
-    res.send(`The rod is ${name}, price is: ${price}`);
+    const { id } = req.params;  // An example of getting a param from the route signature
+    const { price } = req.query; // An example of getting a param from the query string
+
+    res.send(`The rod id is ${id}, price is: ${price}`);
 }
