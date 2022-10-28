@@ -1,7 +1,7 @@
 import * as React from 'react';
 import BaseLayout from '../../layouts/base';
 
-interface IRodsViewProps {
+interface IRodsViewProps extends React.ComponentPropsWithoutRef<typeof BaseLayout> {
     title: string;
 }
 

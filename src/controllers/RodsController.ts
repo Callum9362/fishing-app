@@ -12,3 +12,4 @@ export function getRodPrice(req: Request, res: Response) {
 
     res.send(`The rod id is ${id}, price is: ${price}`);
 }
+
