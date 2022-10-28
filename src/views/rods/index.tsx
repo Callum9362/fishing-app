@@ -10,7 +10,7 @@ class RodsView extends React.Component<IRodsViewProps> {
         return (
             <BaseLayout title={this.props.title}>
                 <h2>Index</h2>
-                <p>Hello from our MoviesView component!</p>
+                <p>Hello from our RodsView component!</p>
             </BaseLayout>
         );
     }

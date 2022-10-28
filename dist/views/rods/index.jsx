@@ -32,7 +32,7 @@ class RodsView extends React.Component {
     render() {
         return (<base_1.default title={this.props.title}>
                 <h2>Index</h2>
-                <p>Hello from our MoviesView component!</p>
+                <p>Hello from our RodsView component!</p>
             </base_1.default>);
     }
 }
