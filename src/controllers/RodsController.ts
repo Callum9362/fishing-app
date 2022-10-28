@@ -2,7 +2,7 @@
 import { Request, Response } from 'express';
 
 export function index(req: Request, res: Response) {
-    res.send('This is my default response..');
+    res.render('rods/index', { title: 'Rods' });
 }
 
 export function getRodPrice(req: Request, res: Response) {

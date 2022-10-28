@@ -1,8 +1,14 @@
 import express from 'express';
 import rodsRouter from './routers/RodsRouter';
+import * as path from 'path';
 
 // Creates a new Express app instance
 const app = express();
+
+// Sets up the view engine
+app.set('views', path.join(__dirname, '/src/views'));
+app.set('view engine', 'jsx');
+app.engine('jsx', require('express-react-views').createEngine());
 
 // Frontpage
 app.get('/', (req, res) => {

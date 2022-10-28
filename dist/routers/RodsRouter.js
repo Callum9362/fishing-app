@@ -28,7 +28,8 @@ const rodsController = __importStar(require("../controllers/RodsController"));
 const rodsRouter = (0, express_1.Router)();
 // GET /rods/
 rodsRouter.get('/', rodsController.index);
-// GET /rods/welcome
-rodsRouter.get('/price', rodsController.getRodPrice);
+// GET /rods/price
+// Note the :id this is how you add a route param
+rodsRouter.get('/price:id', rodsController.getRodPrice);
 exports.default = rodsRouter;
 //# sourceMappingURL=RodsRouter.js.map
