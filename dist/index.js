@@ -32,7 +32,7 @@ const path = __importStar(require("path"));
 // Creates a new Express app instance
 const app = (0, express_1.default)();
 // Sets up the view engine
-app.set('views', path.join(__dirname, '../src/views'));
+app.set('views', path.join(__dirname, '/views'));
 app.set('view engine', 'jsx');
 app.engine('jsx', require('express-react-views').createEngine());
 // Frontpage
